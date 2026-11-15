@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 私密材料、授权或安全问题 / Private support
+    url: mailto:support@baigave.cn
+    about: 公开 Issue 没有私密附件。请通过邮件发送私人日志、工程、订单或安全问题。
+  - name: 使用教程与下载 / Documentation and downloads
+    url: https://baigave.cn/support.html
+    about: 查看支持范围、下载与使用说明。

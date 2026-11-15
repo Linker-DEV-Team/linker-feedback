@@ -1,0 +1,52 @@
+name: 兼容性反馈 / Compatibility report
+description: 特定 Minecraft、加载器、模组、光影或资源包的问题
+title: "[Compatibility] "
+labels: ["kind:compatibility", "status:triage"]
+body:
+  - type: markdown
+    attributes:
+      value: 请给出准确版本和官方来源。描述与附件公开；私人存档、工程或网盘链接请发 support@baigave.cn，并注明 Issue 编号。
+  - type: input
+    id: linker
+    attributes:
+      label: Linker 与 Blender 版本 / Linker and Blender versions
+    validations:
+      required: true
+  - type: input
+    id: minecraft
+    attributes:
+      label: Minecraft 与加载器完整版本 / Minecraft and loader versions
+    validations:
+      required: true
+  - type: textarea
+    id: components
+    attributes:
+      label: 相关组件与官方来源 / Components and official sources
+      description: 模组、整合包、光影或资源包名称、准确版本及官方页面。没有可公开的来源时请说明。
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 最小复现步骤 / Minimal reproduction
+      description: 涉及哪个世界、实体、方块、动作或材质？去掉其他组件后是否仍出现？
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: 预期与实际结果 / Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 截图与诊断 / Evidence
+      description: 系统、显卡、截图、录屏和确认可以公开的诊断 ZIP。
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 提交前确认 / Before submitting
+      options:
+        - label: 我已搜索已有问题，并确认正文与附件可以公开，不含密钥、授权码或私人素材。
+          required: true
